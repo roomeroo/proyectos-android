@@ -1,4 +1,5 @@
 import com.example.proyecto_final_android_apuntes.data.model.Task
+import javax.inject.Inject
 
 sealed class TodoUiState{
     object Loading: TodoUiState()
@@ -6,6 +7,8 @@ sealed class TodoUiState{
     data class Error(val message: String): TodoUiState()
 }
 
-class TaskListViewModel(){
+class TaskListViewModel @Inject constructor (
+
+){
 
 }
